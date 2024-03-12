@@ -1,0 +1,146 @@
+@media (max-width: 639px) {
+  .container {
+    width: 85% !important;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .mobile-btn {
+    display: block !important;
+    color: #0779e4;
+    font-size: 30px;
+  }
+
+  .slideshow-container {
+    height: 400px;
+  }
+
+  .mySlides {
+    height: 400px;
+  }
+
+  .banner-content {
+    width: 100%;
+  }
+
+  .banner-img {
+    display: none;
+  }
+
+  .banner-introduce {
+    font-size: 26px;
+  }
+
+  .banner-location {
+    margin-bottom: 20px;
+  }
+
+  .contact-me-img {
+    display: none;
+  }
+
+  .slide2-text {
+    margin-top: 20px;
+  }
+
+  .about {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about-img {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-heading {
+    font-size: 30px;
+  }
+
+  .portfolio-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .services-heading {
+    font-size: 30px;
+  }
+
+  .contact2 .container {
+    flex-direction: column;
+  }
+
+  .contact2-heading {
+    font-size: 22px;
+  }
+
+  .contact2-btn {
+    width: 150px;
+    height: 45px;
+    margin-top: 20px;
+  }
+
+  .testimonials-icon {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  .testimonials-numb {
+    font-size: 24px;
+  }
+
+  .testimonials-desc {
+    font-size: 12px;
+  }
+
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  .contact-main {
+    padding: 30px;
+  }
+
+  .contact-info {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 20px;
+  }
+
+  .contact-info > div {
+    margin-bottom: 10px;
+  }
+
+  .contact-my {
+    margin-bottom: 5px;
+  }
+
+  #contact-form button {
+    width: 100%;
+  }
+
+  footer .container {
+    flex-direction: column;
+  }
+
+  .footer-info,
+  .footer-services,
+  .footer-questions {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .footer-info > p,
+  .footer-services > p,
+  .footer-questions > p {
+    margin-bottom: 10px;
+  }
+}

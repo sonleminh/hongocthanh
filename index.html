@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aldrich&family=Mulish:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header id="header" class="">
+        <div class="container">
+          <div class="header-mobile">
+            <a href="./index.html">
+              <p class="logo">Portfolio</p>
+            </a>
+            <i
+              id="mobile-bar"
+              class="fa-solid fa-bars mobile-btn hidden"
+              onclick="handleBarClick()"
+            ></i>
+          </div>
+          <div class="header-menu">
+            <ul class="">
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About me</a></li>
+              <li><a href="#portfolio">Homework</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div id="overlay" class="hidden" onclick="handleOverlayClick()"></div>
+      <div id="mobile-menu" class="hidden">
+        <div>
+          <a href="/">
+            <a href="./index.html"> <p class="logo">Portfolio</p> </a
+            ><i
+              id="close-btn"
+              class="fa-solid fa-xmark"
+              onclick="handleCloseBtn()"
+            ></i>
+          </a>
+        </div>
+        <ul>
+          <a><li class="">Homepage</li></a>
+          <a><li class="">About me</li></a>
+          <a><li class="">Portfolio</li></a>
+          <a><li class="">Contact</li></a>
+        </ul>
+      </div>
+      <a href="#header"
+        ><button id="scroll-to-top">
+          <i class="fa-solid fa-chevron-up"></i></button
+      ></a>
+      <main>
+        <div id="slider" class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides slide1 fade">
+            <div class="container">
+              <div class="banner-content">
+                <div class="banner-hi">Hi there!</div>
+                <p class="banner-introduce">I am Ho Ngoc Thanh</p>
+                <p class="banner-email">
+                  <i class="fa-regular fa-envelope"></i
+                  ><span>thanhhox567@gmail.com</span>
+                </p>
+                <p class="banner-location">
+                  <i class="fa-solid fa-location-dot"></i
+                  ><span>Duc Giang - Long Bien</span>
+                </p>
+                <button class="banner-btn smooth-scroll">
+                  <a href="#portfolio">VIEW PORTFOLIO</a>
+                </button>
+                <div class="banner-socials">
+                  <a
+                    href="https://www.facebook.com/thanhho.ngoc.7503"
+                    class="banner-link"
+                    ><i class="fa-brands fa-facebook"></i>FACEBOOK</a
+                  ><a
+                    href="https://www.instagram.com/thanhbinnn"
+                    class="banner-link"
+                    ><i class="fa-brands fa-instagram"></i>INSTAGRAM</a
+                  >
+                </div>
+              </div>
+              <img src="img/ava.jpg" alt="banner-img" class="banner-img" />
+            </div>
+          </div>
+
+          <div class="mySlides slide2 fade">
+            <div class="container">
+              <img
+                src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1707264000&semt=ais"
+                alt=""
+                class="contact-me-img"
+              />
+              <div>
+                <p class="slide2-text">Contact me !!</p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1810/1810705.png"
+                  alt=""
+                  class="contact-img2"
+                />
+                <button class="contact-me-btn">Contact me</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mySlides slide3 fade">
+            <img
+              src="https://dautuquocte.org/wp-content/uploads/2017/01/career-banner.png"
+              alt=""
+              class="contact3-me-img"
+            />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br />
+        <div class="container">
+          <div id="about" class="about smooth-scroll">
+            <div>
+              <img src="img/ava.jpg" alt="" class="about-img" />
+            </div>
+            <div>
+              <button class="about-tag">ABOUT ME</button>
+              <p class="about-heading">My Story</p>
+              <p class="about-desc">
+                I am a student passionate about programming and web design. With
+                the spirit of trying hard to learn, I look forward to working
+                with you to create valuable products for users.
+              </p>
+            </div>
+          </div>
+          <!-- Modal -->
+          <div id="myModal" class="modal">
+            <!-- Nội dung modal -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <div>
+                <img src="/img/banner.jpg" alt="" class="modal-img" />
+                <p>UX & UI Design</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="portfolio" class="portfolio">
+            <p class="portfolio-heading">Portfolio of Work</p>
+            <p class="portfolio-sub">
+              This is My Expertise, The Services I'll Provide My Clients
+            </p>
+            <div class="portfolio-list">
+              <a href="https://thanhbin204.000webhostapp.com/buoi%201/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 1</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%202/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 2</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%203/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 3</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%204/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 4</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/buoi%205/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 5</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/bu%e1%bb%95i%206/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Buổi 6</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+              <a href="https://thanhbin204.000webhostapp.com/ktra/">
+                <img src="img/lesson.jpg" alt="" class="portfolio-img" />
+                <p>Bài kiểm tra 30%</p>
+                <button>
+                  Read more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact2">
+          <div class="container">
+            <div>
+              <p class="contact2-heading">
+                Have any works you want to done by me?
+              </p>
+              <p class="contact2-sub">
+                Far far away, behind the word mountains
+              </p>
+            </div>
+            <button class="contact2-btn">
+              <a href="#contact">CONTACT ME</a>
+            </button>
+          </div>
+        </div>
+        <div class="container">
+          <div class="services">
+            <p class="services-heading">SERVICES</p>
+            <p class="services-sub">
+              This is My Expertise, The Services I'll Provide My Clients
+            </p>
+            <div class="services-list">
+              <div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt=""
+                  class="services-img"
+                />
+                <p>HTML</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
+                  alt=""
+                  class="services-img"
+                />
+                <p>CSS</p>
+              </div>
+              <div>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                  alt=""
+                  class="services-img"
+                />
+                <p>Javascript</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonials">
+          <div class="container">
+            <div class="testimonials-list">
+              <div>
+                <i class="fa-solid fa-users testimonials-icon"></i>
+                <div>
+                  <p class="testimonials-numb">3,000</p>
+                  <p class="testimonials-desc">HAPPY CUSTOMER</p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-folder-closed testimonials-icon"></i>
+                <div>
+                  <p class="testimonials-numb">20</p>
+                  <p class="testimonials-desc">PROJECT COMPLETED</p>
+                </div>
+              </div>
+              <div>
+                <i class="fa-solid fa-mug-hot testimonials-icon"></i>
+                <div>
+                  <p class="testimonials-numb">200</p>
+                  <p class="testimonials-desc">CUPS OF COFFEE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="contact" class="contact">
+          <img
+            src="https://apmlromania.com/EN/wp-content/uploads/2018/04/contact.jpg"
+            alt=""
+            class="contact-img"
+          />
+          <div class="contact-main">
+            <p class="contact-heading">Contact me</p>
+            <p class="contact-sub">
+              We're open for any suggestion or just to have a chat
+            </p>
+            <div class="contact-info">
+              <div>
+                <p class="contact-my">MY ADDRESS:</p>
+                <p class="contact-info-desc">Duc Giang - Long Bien</p>
+              </div>
+              <div>
+                <p class="contact-my">MY EMAIL:</p>
+                <p>thanhhox567@gmail.com</p>
+              </div>
+              <div>
+                <p class="contact-my">MY PHONE:</p>
+                <p>+84 984 465091</p>
+              </div>
+            </div>
+            <form id="contact-form">
+              <div class="form-first">
+                <input
+                  type="text"
+                  id="input1"
+                  name="input1"
+                  placeholder="Name"
+                  class="form-name"
+                />
+                <input
+                  type="text"
+                  id="input2"
+                  name="input2"
+                  placeholder="Phone"
+                  class="form-phone"
+                />
+              </div>
+              <input
+                type="text"
+                id="input3"
+                placeholder="Email"
+                class="form-email"
+              />
+              <textarea
+                type="text"
+                id="input4"
+                placeholder="Message"
+                class="form-message"
+                rows="4"
+              ></textarea>
+              <button class="form-btn" type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+        <footer>
+          <div class="container">
+            <div class="footer-info">
+              <p class="footer-name">Ho Ngoc Thanh</p>
+              <p class="footer-desc">
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia.
+              </p>
+              <ul class="footer-socials">
+                <li>
+                  <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-services">
+              <p>Services</p>
+              <ul>
+                <li><a href="/">Web Design</a></li>
+                <li><a href="/">Web Development</a></li>
+                <li><a href="/">Graphic Design</a></li>
+                <li><a href="/">UI/UX Design</a></li>
+              </ul>
+            </div>
+            <div class="footer-questions">
+              <p>Have a Questions?</p>
+              <ul>
+                <li>
+                  <a href="/"
+                    ><i class="fa-solid fa-location-dot"></i> Duc Giang - Long
+                    Bien</a
+                  >
+                </li>
+                <li>
+                  <a href="/"
+                    ><i class="fa-solid fa-phone"></i>+84 984 465091</a
+                  >
+                </li>
+                <li>
+                  <a href="/"
+                    ><i class="fa-brands fa-telegram"></i>
+                    thanhhox567@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName('mySlides');
+        let dots = document.getElementsByClassName('dot');
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = 'none';
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(' active', '');
+        }
+        slides[slideIndex - 1].style.display = 'block';
+        dots[slideIndex - 1].className += ' active';
+      }
+
+      document.addEventListener('DOMContentLoaded', function () {
+        var smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+
+        for (var i = 0; i < smoothScrollLinks.length; i++) {
+          smoothScrollLinks[i].addEventListener('click', function (event) {
+            event.preventDefault();
+            var targetId = this.getAttribute('href');
+            var targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start',
+              });
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
